@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+
+    <script>
+        function fun1()
+        {   var v1 =   document.getElementById("s1");
+            var v2 = document.getElementById("s2");
+            var v3 = document.getElementById("s3");
+            var v4 = document.getElementById("s4");
+            var v5 = document.getElementById("s5");
+            var v6 = document.getElementById("s6");
+            var tol = parseInt(v1.value)+parseInt(v2.value)+parseInt(v3.value)+parseInt(v4.value)+parseInt(v5.value)+parseInt(v6.value);
+            var gpa = [[parseInt(v1.value)+parseInt(v2.value)+parseInt(v3.value)+parseInt(v4.value)+parseInt(v5.value)+parseInt(v6.value)]/5]/10;
+            //var cgpa = [[[parseInt(v1.value)+parseInt(v2.value)+parseInt(v3.value)+parseInt(v4.value)+parseInt(v5.value)+parseInt(v6.value)]/5]/10];
+            document.getElementById("d1").innerHTML = "Total Marks="+tol;
+            document.getElementById("d2").innerHTML = "gpa="+gpa; 
+           //document.getElementById("d3").innerHTML = "cgpa="+cgpa;
+           
+            
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <div class="text-center bg-primary">
+            <h1 >CGPA CALCULATOR</h1>
+        </div>
+        <div class="text-center bg-info">
+        <form id="f1">
+            sub1<input type="text" id="s1" placeholder="subject 1"><br><br>
+            
+            sub2<input type="text" id="s2" placeholder="subject 2"><br><br>
+            
+            sub3<input type="text" id="s3" placeholder="subject 3"><br><br>
+            
+            sub4<input type="text" id="s4" placeholder="subject 4"><br><br>
+            
+            sub5<input type="text" id="s5" placeholder="subject 5"><br><br>
+            
+            sub6<input type="text" id="s6" placeholder="subject 6"><br><br>
+            <input type="button" value="CALCULATE" onclick="fun1()">
+        </form>
+        <div id="d1">total mark</div>
+        <div id="d2">gpa</div>
+        
+        </div>
+       
+    </div>
+        
+    </body>
+</html>
